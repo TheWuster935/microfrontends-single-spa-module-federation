@@ -1,19 +1,19 @@
 {
   "$schema": "https://openapi.vercel.sh/microfrontends.json",
   "applications": {
-    "microfrontends-single-spa-module-federation-root": {
+    "root-mf-test": {
       "development": {
-        "fallback": "microfrontends-single-spa-module-federation-root.vercel.app"
+        "fallback": "root-mf-test.vercel.app"
       }
     },
-    "microfrontends-single-spa-module-federation-content": {
+    "content-mf-test": {
       "routing": [
         {
           "paths": ["/_content/:path*"]
         }
       ]
     },
-    "microfrontends-single-spa-module-federation-navigation": {
+    "navigation-mf-test": {
       "routing": [
         {
           "paths": ["/_navigation/:path*"]
